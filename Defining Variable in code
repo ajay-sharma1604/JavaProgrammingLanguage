@@ -10,3 +10,10 @@ public class JavaBasics{
         System.out.println(a);
     }
 }
+
+
+output:-
+10
+5
+Tony Stark
+5
