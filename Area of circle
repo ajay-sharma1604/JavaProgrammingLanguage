@@ -2,9 +2,9 @@ import java.util.*;
 public class Basics{
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
-        int r = sc.nextInt();
-        float sum = 3.14f * r * r ;
-        System.out.println(sum);
+        float r = sc.nextFloat();
+        float area = 3.14f * r * r ;
+        System.out.println(area);
 
     }
 }
