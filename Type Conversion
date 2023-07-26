@@ -1,0 +1,38 @@
+//Type Conversion//
+
+import java.util.*;
+public class Basics{
+    public static void main(String args[]){
+        /*
+        1)
+        int a = 25;
+        long b = a;
+        System.out.println(b);
+         Error free- Output- 25
+        */
+
+        /*
+        2)
+        long a = 25;
+        int b = a;
+        System.out.println(b);
+        Error generated - Lossy conversion from long to int
+        */
+         
+         /*
+        3)
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextFloat();
+        System.out.println(a);
+        Error generated - Lossy conversion from float to int
+        */
+
+        /*
+        4)
+        Scanner sc = new Scanner(System.in);
+        float a = sc.nextInt();
+        System.out.println(a);
+        Error free code - output-16 then 16.0
+        */
+    }
+}
