@@ -1,0 +1,26 @@
+import java.util.*;
+public class Basics{
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+       //performing addition operations on integer type variable//
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int Sum =  a +  b ; 
+        System.out.println(Sum);
+        //performing subtraction operation on interger type variable//
+        int  c = sc.nextInt();
+        int  d = sc.nextInt();
+        int Subtract = c - d ;
+        System.out.println(Subtract);
+        //performing multiplication operation on floating type variable//
+        float e = sc.nextFloat();
+        float f = sc.nextFloat();
+        float multiplication = e * f ;
+        System.out.println(multiplication);
+        //performing division operation on integer type variable/
+        int g = sc.nextInt();
+        int h = sc.nextInt();
+        int Division = g/h ;
+        System.out.println(Division);
+    }
+}
