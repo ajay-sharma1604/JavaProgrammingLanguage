@@ -1,0 +1,47 @@
+public class Basics{
+    public static void main(String args[]){
+        /*
+        Type promotion is applicable for expresions
+
+        char a = 'a';
+        char b = 'b';
+        System.out.println(b-a);
+        System.out.println( (int) b);  (just for checking)
+        System.out.println( (int) a);  (just for checking)
+        output- 1
+                98
+                97
+        */
+
+       /*
+       Type promotion is not done by java for a normal variable
+
+       char a = 'a';
+       System.out.println(a);
+       output -a
+       */
+      
+      /*
+          Lossy Conversion from int to any
+
+      char a = 'a';
+      char b = 'b';
+      char c = a-b;
+      Output- Error LOSSY CONVERSION FROM INT TO char
+      
+
+      Short a = 5;
+      byte  b = 25;
+      char  c = 'c';
+      byte bt = a+b+c;
+      Output- Error LOSSY CONVERSION FROM INT TO BYTE
+
+      */
+
+      
+      
+      
+
+
+    }
+}
