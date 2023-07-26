@@ -1,0 +1,35 @@
+public class Basics{
+    public static void main(String args[]){
+        /*
+        float a = 25.99f; or float a = (float)25.99;
+        int b = (int) a;
+        System.out.println(b);
+        //Error free, output- 25 (no round off values in coding, values after decimals are removed,only integer part is shown)
+        //*/
+
+       /*
+       float a = 25.99f;
+       int b = a;
+       System.out.println(b);
+       Error Generated, Lossy conversion from float to int
+       */
+
+       /*
+       Special( type conversion is allowed from character to number)
+
+       char ch ='a';
+       int number1 = ch;
+       System.out.println(number1);
+       char ch2 = 'b';
+       int number2 = ch2;
+       System.out.println(number2);
+       char ch3 = 'c';
+       int number3= ch3;
+       System.out.println(number3);
+
+       Error Free, Output -97
+                           98
+                           99
+       */
+    }
+}
