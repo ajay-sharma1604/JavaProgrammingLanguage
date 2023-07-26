@@ -1,0 +1,23 @@
+import java.util.*;
+public class Basics{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        //Taking String type Variable//
+        String name = sc.next();
+        System.out.println(name);
+        sc.nextLine();
+        //Taking String type variable including space//
+        String namespace = sc.nextLine();
+        System.out.println(namespace);
+        //Taking int type variable//
+        int number = sc.nextInt();
+        System.out.println(number);
+        //Taking float type variable//
+        float price = sc.nextFloat();
+        System.out.println(price);
+        //Taking boolean type variable//
+        boolean either =sc.nextBoolean();
+        System.out.println(either);
+
+    }
+}
