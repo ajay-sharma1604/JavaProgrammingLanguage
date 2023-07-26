@@ -1,0 +1,29 @@
+public class Basics{
+    public static void main(String args[]){
+        /*int a = 10;
+        float b = 20.25f;
+        long c = 25;
+        double d = 30;
+        double ans = a+b+c+d;
+        System.out.println(ans);
+        Output- Answer is print in Double*/
+
+        /*int a = 10;
+        float b = 20.25f;
+        long c = 25;
+        double d = 30;
+        int ans = a+b+c+d;
+        System.out.println(ans);
+        Output- Lossy conversion from double to int(since rhs is in double)*/
+
+       /*
+       WE can still print above by using type casting
+        int a = 10;
+        float b = 20.25f;
+        long c = 25;
+        double d = 30;
+        int ans = (int)(a+b+c+d);
+        System.out.println(ans);
+        Output - 85 */
+    }
+}
