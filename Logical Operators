@@ -1,0 +1,26 @@
+public class Basics{
+    public static void main(String args[]){
+        //Logical AND   (&&)
+       /*
+        System.out.println( (3>2) && (5>0) );   Output-TRUE
+        System.out.println( (3<2) && (5>0) ); Output-False
+        System.out.println( (3>2) && (5<0) );  Output-False
+        System.out.println( (3<2) && (5<0) ); Output-False
+        */
+
+       //Logical OR    (||)
+      /*
+      System.out.println( (3<2) || (5<0) ); Output-false
+      System.out.println( (3>2) || (5<0) ); Output-true
+      System.out.println( (3<2) || (5>0) ); Output-true
+      System.out.println( (3>2) || (5>0) ); Output-true
+      */
+
+     //Logical NOT      (!)
+     /*
+     System.out.println( !(3>2) ); Output-false
+     System.out.println( !(0>5) ); Output-true
+     */
+
+    }
+}
