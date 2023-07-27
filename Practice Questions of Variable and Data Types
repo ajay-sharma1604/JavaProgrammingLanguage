@@ -11,8 +11,8 @@ public class Basics{
         System.out.println("Enter C");
         int C = sc.nextInt();
         int Avg = (A+B+C)/3;
-        System.out.println("Hence the required Average is");
-        System.out.println(Avg);
+        System.out.println("Hence the required Average is " + Avg);
+        //System.out.println(Avg);
     }
 }
 
@@ -25,8 +25,8 @@ public class Basics{
         System.out.println("Enter side of a square");
         int Side = sc.nextInt();
         int Area= Side*Side;
-        System.out.println("Hence the Area of Square is:");
-        System.out.println(Area);
+        System.out.println("Hence the Area of Square is: " + Area);
+        //System.out.println(Area);
     }
 }
 
@@ -42,9 +42,13 @@ public class Basics{
         float item2 = sc.nextFloat();
         System.out.println("ENTER COST OF 3rd ITEM- Eraser");
         float item3 = sc.nextFloat();
-        System.out.println("Bill:-");
         float total = item1+ item2 + item3;
-        System.out.println(total);
+         System.out.println("Bill:- " + total);
+        //System.out.println(total);
+
+        //Adding 18% gst tax to the bill
+         float newtotal = total + (total*0.18f);
+         System.out.println("Bill with 18% GST tax: " + newtotal);
 
     }
 }
@@ -80,4 +84,12 @@ public class Basics{
     }
 }
 
+
+Question 5:(Advanced)Will the following statement give any error in Java? 
+                             int$=24;
+
+answer:- No, the statement will not give any error.
+Names of variables are called identifiers inJava.
+Identifier rule says,identifiers can start with any alphabet or underscore (“_”) or dollar (“$”).
+According to the rule the given variable name is a valid identifier.
 
