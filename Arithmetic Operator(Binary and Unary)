@@ -15,3 +15,45 @@ public class Basics{
 
 //Unary Operator
 
+public class Basics{
+    public static void main(String args[]){
+
+        // Pre increment operator - Output a-11 , b-11
+
+        /*
+        int a = 10;
+        int b = ++a;
+        System.out.println(a);
+        System.out.println(b);
+        */
+
+       //Post increment operator - Output a-11, b-10
+
+       /*
+       int a = 10;
+       int b = a++;
+       System.out.println(a);
+       System.out.println(b);
+       */
+
+      //Pre decrement operator - Output a-9 , b-9
+
+      /*
+      int a = 10;
+      int b = --a;
+      System.out.println(a);
+      System.out.println(b);
+      */
+
+     //Post decrement operator - Output a-9 , b-10
+
+     /*
+     int a = 10;
+     int b = a--;
+     System.out.println(a);
+     System.out.println(b);
+     */
+        
+    }
+}
+
