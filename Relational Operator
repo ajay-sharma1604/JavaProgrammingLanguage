@@ -1,0 +1,85 @@
+public class Basics{
+    public static void main(String args[]){
+        //1 Double equal to Operator(==)
+        
+        /*
+        int A = 10;
+        int B = 5;
+        System.out.println(A == B);
+        output-false
+        */
+
+       /*
+       int A = 10;
+       int B = 10;
+       System.out.println(A == B);
+       output-true
+       */
+
+      //2 Not Equal to Operator(!=)
+
+      /*
+      int A = 10;
+      int B = 5;
+      System.out.println(A != B);
+      output - true
+      */
+      
+     /*
+     int A = 10;
+     int B = 10;
+     System.out.println(A != B);
+     output - false
+     */
+        
+     //3 Greater (>)
+
+     /*
+     int A = 10;
+     int B = 5;
+     System.out.println(A > B);  
+     Output -true 
+     */
+
+    /*
+    int A = 20;
+    int B = 50;
+    System.out.println(A > B);
+    */
+   
+    //4 Less than Operator (<)
+
+   /*
+    int A = 10;
+    int B = 5;
+    System.out.println(A<B);
+    Output -false
+    */
+
+    /*
+    int A = 20;
+    int B = 50;
+    System.out.println(A<B);
+    Output - true
+    */
+   
+   //5 Greater than equal to(>=)
+
+   /*
+   int A = 10;
+   int B = 10;
+   System.out.println(A >= B);
+   Output - true
+   */
+   
+   //6 Less than equal to (<=)
+
+   /*
+   int A = 10;
+   int B = 10;
+   System.out.println(A <= B);
+   Output - true
+   */
+
+    }
+}
