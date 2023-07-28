@@ -68,3 +68,73 @@ public class Basics{
     }
 }
 Output -Teenager
+
+                                                 Print the largest of 2 number
+
+import java.util.*;
+public class Basics{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Num1");
+        int Num1 = sc.nextInt();
+        System.out.println("Num2");
+        int Num2 = sc.nextInt();
+        if(Num1 >Num2)
+        {
+            System.out.println("Num1 is greater");
+        }
+        if(Num1 ==Num2)
+        {
+           System.out.println("Num1 and Num2 are equal");
+        }
+        else
+        {
+            System.out.println("Num2 is greater");
+        }
+    }
+}
+
+                                                Print if a number is Odd or Even
+
+import java.util.*;
+public class Basics{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        
+       long Number = sc.nextLong();
+
+
+        /*                  
+                                NUMBER DIVISIBLE BY 2
+
+        if( Number%2 == 0)
+        {
+            System.out.println("Number is even");
+        }
+        else
+        {
+            System.out.println("Number is odd");
+        }
+
+        */
+
+
+
+        /*                    
+                         NUMBER ENDS WITH 0,2,4,6,8   (Divide number by 10 and the remainder will be the last digit)
+
+        long Calculate = Number%10;
+        if(Calculate == 0 || Calculate == 2 || Calculate == 4 || Calculate == 6 || Calculate == 8)
+        {
+            System.out.println("Number is Even");
+
+        }
+        else 
+        {
+
+            System.out.println("Number is Odd");
+
+        }
+        */
+    }
+}
