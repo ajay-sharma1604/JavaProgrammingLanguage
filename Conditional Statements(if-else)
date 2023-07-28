@@ -1,0 +1,70 @@
+1)
+import java.util.*;
+public class Basics{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int age = sc.nextInt();
+        if(age>20){
+            System.out.println("Congratulations boy you are an adult ");
+        }
+        else{
+            System.out.println("Go back Kid");
+        }
+        
+    }
+}
+
+2)
+public class Basics{
+    public static void main(String args[]){
+      
+        int age = 22;
+        if(age >= 18){
+            System.out.println("adult : drive, vote");
+        }
+        else{
+            System.out.println("not adult");
+        }
+        
+    }
+}
+Output- adult : drive, vote
+
+3)
+
+public class Basics{
+    public static void main(String args[]){
+      
+        int age = 16;
+        if(age >= 18){
+            System.out.println("adult : drive, vote");
+        }
+        else{
+            System.out.println("not adult");
+        }
+        
+    }
+}
+Output - not adult
+
+4)
+
+public class Basics{
+    public static void main(String args[]){
+      
+        int age = 16;
+        if(age >= 18){
+            System.out.println("adult : drive, vote");
+        }
+
+        if( age>3 && age<18){
+            System.out.println("Teenager");
+        }
+
+        else{
+            System.out.println("not adult");
+        }
+        
+    }
+}
+Output -Teenager
