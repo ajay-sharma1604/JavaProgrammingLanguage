@@ -1,0 +1,20 @@
+public class Basics{
+    public static void main(String args[]){
+        int age = 18;
+         if(age >= 18){
+            System.out.println("adult");
+         }
+         else if(age >=13 && age <18){
+            System.out.println("teenager");
+         }
+         else{
+            System.out.println("child");
+         }
+    }
+}
+
+Output- adult
+
+//First condition gets true so other conditions will not be checked and hence compiler's computational time gets saved.
+
+
