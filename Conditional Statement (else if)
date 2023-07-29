@@ -18,3 +18,22 @@ Output- adult
 //First condition gets true so other conditions will not be checked and hence compiler's computational time gets saved.
 
 
+//                        INCOME TAX CALCULATOR                     //
+
+import java.util.*;
+public class Basics{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        double income = sc.nextInt();
+        double tax;
+        if(income <500000){
+            System.out.println("Your total tax is " + (tax = 0) );
+        }
+        else if(income>500000 && income< 1000000){
+            System.out.println("Your total tax is " + (tax= income * 0.2) );
+        }
+        else{
+            System.out.println("Your total tax is " + (tax = income * 0.3) );
+        }
+    }
+}
