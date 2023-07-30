@@ -18,7 +18,7 @@ Output- adult
 //First condition gets true so other conditions will not be checked and hence compiler's computational time gets saved.
 
 
-//                        INCOME TAX CALCULATOR                     //
+////////////////////////////////////////           INCOME TAX CALCULATOR                     ////////////////////////////////////////////////////
 
 import java.util.*;
 public class Basics{
@@ -37,3 +37,27 @@ public class Basics{
         }
     }
 }
+
+
+---------------------------------------------    MORE EASY WAY TO MAKE A INCOME TAX CALCULATOR ----------------------------------------------------------
+
+import java.util.*;
+public class Basics{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int income = sc.nextInt();
+        int tax;
+        if(income <500000){
+           tax = 0;
+        }
+        else if(income>500000 && income< 1000000){
+           tax= (int) (income * 0.2)  ;
+        }
+        else{
+            tax = (int) (income * 0.3) ;
+        }
+
+        System.out.println("your tax: " + tax);
+    }
+}
+
