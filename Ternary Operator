@@ -1,4 +1,4 @@
-example 1
+.......................................example 1...................................
 
 
 public class Basics{
@@ -12,7 +12,7 @@ public class Basics{
 output:- even
 
 
-example 2
+......................................example 2.......................................
 
 public class Basics{
     public static void main(String args[]){
@@ -22,3 +22,16 @@ public class Basics{
 }
 
 output- true
+
+
+................................Check if a student will pass or fail............................
+
+import java.util.*;
+public class Basics{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int marks = sc.nextInt();
+        String result = (marks>=33)? "Pass":"Fail";
+        System.out.println(result);
+    }
+}
