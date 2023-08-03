@@ -1,0 +1,45 @@
+import java.util.*;
+public class Basics{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+       /*
+                             *************(1)*************
+
+        int number = sc.nextInt();
+        switch (number)
+        {
+            case 3:
+                System.out.println("Case 1 is correct");
+                        break;
+            case 1:
+                System.out.println("Case 2 is correct");
+                        break;
+            case 2:
+                System.out.println("Case 3 is correct");
+                        break; 
+            default:
+                System.out.println("All Cases are incorrect");        
+        }
+        */
+                     *****************(2)***********************
+
+       char ch = sc.next().charAt(0);
+       switch(ch)
+       {
+        case 'a' :
+            System.out.println("Samosa");
+                     break;
+
+        case 'b' :
+            System.out.println("Maggie");
+                    break;
+
+        case 'c' :
+            System.out.println("Burger");
+                    break;
+
+        default  :
+            System.out.println("Nothing to eat");
+       }
+        }
+    }
