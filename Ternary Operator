@@ -1,0 +1,24 @@
+example 1
+
+
+public class Basics{
+    public static void main(String args[]){
+        int number =4;
+        String type = (number%2==0) ? "even":"odd";
+        System.out.println(type);
+    }
+}
+
+output:- even
+
+
+example 2
+
+public class Basics{
+    public static void main(String args[]){
+       boolean larger = 5   >   3            ?   true  :     false;
+      System.out.println(larger);
+ }
+}
+
+output- true
