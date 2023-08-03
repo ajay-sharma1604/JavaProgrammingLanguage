@@ -37,3 +37,45 @@ public class Basics{
           }
         }
     }
+
+
+
+********************************************************* Making Calculator Using If else*************************************************
+
+import java.util.*;
+public class Basics{
+    public static void main(String args[]){
+        Scanner sc =new Scanner(System.in);
+        System.out.println("Please enter first number");
+        float a = sc.nextFloat();
+        System.out.println("Please enter second number");
+        float b = sc.nextFloat();
+        System.out.println("Write a for addition , s for subtraction , m for multiplication, d for division, e for modulo  ");
+        char ch = sc.next().charAt(0);
+        if(ch == 'a')
+        {
+            System.out.println("Addition is : " + (a+b));
+        }
+        if(ch == 's')
+        {
+            System.out.println("Subtraction is : " + (a-b));
+        }
+        if(ch == 'm')
+        {
+            System.out.println("Multiplication is : " + (a*b));
+        }
+        if(ch == 'd')
+        {
+            System.out.println("Division is : " + (a/b));
+        }
+        if(ch == 'm')
+        {
+            System.out.println("Modulo is : " + (a%b));
+        }
+        else
+        {
+            System.out.println("Please write a valid Syntax");
+        }
+    }
+
+}
