@@ -1,0 +1,39 @@
+import java.util.*;
+public class Basics{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+      
+         System.out.println("Enter 1st number");
+          int a = sc.nextInt();
+           System.out.println("Enter 2nd number");
+          int b = sc.nextInt();
+          System.out.println("Write a for addition, s for subtraction , m for multiplication , d for division, and e for modulo");
+          char ch = sc.next().charAt(0);
+          
+          switch(ch)
+          {
+            case 'a' :
+                System.out.println("Addition : " + (a+b) );
+                         break;
+            
+            case 's' :
+                System.out.println("Subtraction : " + (a-b) ); 
+                        break;
+
+            case 'm' :
+                System.out.println("Multip;ication : " + (a*b) );
+                       break;
+            
+            case 'd' :
+                System.out.println("Division : " + (a/b) );
+                       break;
+
+            case 'e' :
+                System.out.println("Modulo : " + (a%b)) ;
+                      break;
+
+            default  :
+                 System.out.println(" Syntax Error, Please write a valid syntax from a,s,m,d,e");
+          }
+        }
+    }
