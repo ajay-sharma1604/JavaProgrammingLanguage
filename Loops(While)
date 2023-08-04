@@ -1,0 +1,57 @@
+***************************************  Print number from 1 to 10 *************************************8
+
+public class basics{
+    public static void main(String args[]){
+        int number = 1;
+        while(number<=10)
+        {
+            System.out.print(number + " ");
+            number++;
+        }
+        
+    }
+}
+
+
+***********************************************    Print number from 1 to n     **********************************************
+
+import java.util.*;
+public class Basics{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter n");
+        int number = 1;
+        int n = sc.nextInt();
+        while(number<=n)
+        {
+            System.out.print(number + " ");
+            number++;
+        }
+    }
+}
+
+
+****************************************  Print Sum of first N natural numbers **********************
+
+import java.util.*;
+public class Basics{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int number = 1;
+        System.out.println("Enter N");
+        int N = sc.nextInt();
+        int sum = 0;
+        while(number<=N)
+        {
+            sum = sum + number;
+            System.out.print(number + " ");
+            number++;
+            
+        }
+        System.out.println();
+           System.out.println(sum);
+    }
+}
+
+
+/////////Write System.out.println(); whenever you want to print the 2nd output in the next line.
