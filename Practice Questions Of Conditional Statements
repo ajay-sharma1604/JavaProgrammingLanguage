@@ -1,0 +1,170 @@
+Question 1) 
+Write a Java program to get a number from the user and print whether it is positive or negative.
+
+Answer:
+
+import java.util.*;
+public class Basics{
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Please write a number");
+        int number = sc.nextInt();
+        if(number>0)
+        {
+            System.out.println("Number is Positive");
+        }
+        else if(number<0)
+        {
+            System.out.println("Number is Negative");
+        }
+        else
+        {
+            System.out.println("0 is a Neutral Number");
+        }
+    }
+}
+
+Question 2)
+Finish the following code so that it prints you hava a fever if your temperature is above 100 
+and otherwise prints you dont have a fever.
+
+public class Solution{
+  public static void main(String args[]){
+  double temp = 103.5;
+  }
+}
+
+Answer:-
+
+import java.util.*;
+public class Basics{
+    public static void main(String args[]){
+        double temp = 103.5;
+        if(temp>100)
+        {
+            System.out.println("You have a fever");
+        }
+        else
+        {
+            System.out.println("You dont have a fever");
+        }
+    }
+}
+
+Question 3)
+Write a Java Program to input week number(1-7) and print day of week name using switch case.
+
+Answer:-
+import java.util.*;
+public class Basics{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter week number from 1-7");
+        int weeknumber = sc.nextInt();
+        switch(weeknumber)
+        {
+            case 1 :
+                {
+                    System.out.println("Monday");
+                           break;
+                }
+            case 2 :
+                {
+                    System.out.println("Tuesday");
+                           break;
+                }
+            case 3 :
+                {
+                    System.out.println("Wednesday");
+                           break;
+                }
+            case 4 :
+                {
+                    System.out.println("Thursday");
+                           break;
+                }
+            case 5 :
+                {
+                    System.out.println("Friday");
+                           break;
+                }
+            case 6 :
+                {
+                    System.out.println("Sturday");
+                           break;
+                }
+            case 7:
+                {
+                    System.out.println("Sunday");
+                           break;
+                }
+            default:
+                {
+                    System.out.println("Invalid,Please write a valid week number");
+                }
+        }
+        }
+    }
+
+
+Question 4)
+What will be the value of x & y in the following program:
+
+public class Solution{
+public static void main(String args[]){
+int a = 63, b = 36;
+boolean x = (a<b)? true:false;
+int y = (a>b)? a:b;
+ }
+}
+
+
+Answe:- value of x = false     value of y = y=a=63
+
+Question 5)
+Write a java program that takes a year from the user and print whether that year is a leap year or not.
+
+hint:
+1)Year Divisible by 4 -Leap year (if not then not a leap year)
+2) Year Divisible by 400 -Leap year(If not then not a leap year
+3)Year Not divisible by 100 - Leap year( if yes then not a leap year)
+
+LEAP YEAR- a year which has 366 days(The extra day is the 29th februrary, there is a leap year every four years).
+
+Answer:
+
+
+import java.util.*;
+    public class Basics{
+        public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+            System.out.println("Enter a year");
+            int year = sc.nextInt();
+            if(year%4 == 0)
+            {
+            if(year%100 == 0)
+            {
+                    if(year%400 == 0)
+                    {
+                    System.out.println("LEAP YEAR");
+                    }
+                    else
+                     {
+                System.out.println("Not Leap year");
+                     }
+            }
+            else
+            {
+                 System.out.println(" Leap year");
+            }
+            }
+            else
+            {
+                 System.out.println("Not Leap year");
+            }
+        }
+    }
+
+
+
+
