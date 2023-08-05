@@ -1,0 +1,41 @@
+****************************************************************** 1st Program  ************************************************************************************
+
+
+public class Basics{
+    public static void main(String args[]){
+        for(int i=1; i<=10;i++)
+        {
+            System.out.println("Hello World");
+        }
+    }
+}
+
+
+**************************************************************** 2nd Program  *****************************************************************************************
+                                                     ((Print Square Pattern))
+
+public class Basics{
+    public static void main(String args[]){
+        for(int Line=1; Line<=4; Line++)
+        {
+            System.out.println("****");
+        }
+    }
+}
+
+//Writing same with while loop
+
+/*
+int line = 1;
+while(line<=4)
+{
+    System.out.println("****");
+    line++;
+}
+    }
+}
+*/
+
+
+
+*************************************************************************** 3rd Program ***********************************************************************************
