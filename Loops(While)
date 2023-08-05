@@ -72,3 +72,21 @@ public class Basics{
 }
 
 Output - 987654
+
+
+****************************************** Reverse the given number ****************************************
+
+public class Basics{
+    public static void main(String args[]){
+        int number = 234567;
+        int reverse = 0;
+        while(number>0)
+        {
+            int lastdigit = number%10;
+            reverse = (reverse*10)  + lastdigit;
+            number=number/10;
+          
+        }
+          System.out.println(reverse);
+    }
+}
