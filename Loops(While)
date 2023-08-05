@@ -57,7 +57,7 @@ public class Basics{
 /////////Write System.out.println(); whenever you want to print the 2nd output in the next line.
 
 
-*********************************************  Reverse a Number *********************************************************************
+********************************************* Print Reverse of a  Given  Number *********************************************************************
 
 public class Basics{
     public static void main(String args[]){
