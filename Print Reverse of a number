@@ -1,0 +1,35 @@
+public class Basics{
+    public static void main(String args[]){
+       /*           
+                      while loop
+
+        int n=1234;
+        while(n>0){
+            int lastdigit = n%10;
+            System.out.print(lastdigit);
+            n=n/10;
+        }
+        */
+          
+        /*           for loop
+
+        for(int n=1234; n>0 ; n=n/10){
+            int lastdigit= n%10;
+            System.out.print(lastdigit);
+            
+        }
+        */
+      
+      /*
+                     do while loop
+
+       int n=1234;
+       do{
+        int lastdigit=n%10;
+        System.out.print(lastdigit);
+        n=n/10;
+       }while(n>0);
+      */
+
+    }
+}
