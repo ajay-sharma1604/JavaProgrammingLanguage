@@ -79,3 +79,47 @@ public class Basics{
     }
 
 }
+
+
+************************************************** Without character input making a calculator ************************************************************
+
+import java.util.*;
+public class Basics{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter 1 st number");
+        int a =sc.nextInt();
+        System.out.println("Enter 2 nd number");
+        int b= sc.nextInt();
+         System.out.println("1 for addition");
+          System.out.println("2 for subtraction");
+           System.out.println("3 for multiplication");
+            System.out.println("4 for division");
+            int operator = sc.nextInt();
+            int result;
+            switch(operator){
+                    case 1:
+                    result = a+b;
+                    System.out.println(result);
+                    break;
+
+                    case 2 :
+                    result = a-b;
+                    System.out.println(result);
+                    break;
+
+                    case 3 :
+                    result = a*b;
+                    System.out.println(result);
+                    break;
+
+                    case 4 :
+                    result = a/b;
+                    System.out.println(result);
+                    break;
+
+                    default :
+                    System.out.println("error in syntax");
+            }
+    }
+}
