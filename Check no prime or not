@@ -1,3 +1,6 @@
+************************** loop running from 2 to n-1 **************************************************************
+
+
 import java.util.*;
 public class Basics{
   public static void main(String args[]){
@@ -51,7 +54,7 @@ public class Basics{
 }
 
 
-****************************************** optimized code for larger number *******************************************************
+****************************************** optimized code for larger number loop running from 2 to underroot n *******************************************************
 
 import java.util.*;
 public class Basics{
