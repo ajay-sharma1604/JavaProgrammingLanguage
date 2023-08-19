@@ -1,0 +1,150 @@
+question 1) How many time "Hello is Printed?
+
+            public class Solution{
+            public static void main(String[] args){
+                for(int i=0; i<5; i++){
+                   System.out.println("Hello");
+                    i+=2;
+                }
+          }
+     }
+
+Solution:   2 TIMES
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+question 2) Write a program that reads a set of integers, and then prints the sum of the even
+and off integers.
+
+Solution:- 
+
+*******************************using do while loop *******************************************
+
+import java.util.*;
+public class Basics{
+  public static void main(String args[]){
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Please enter total no of inputs");
+      int totalinputs=sc.nextInt();
+      int evensum = 0;
+      int oddsum = 0;
+      int i = 1;
+      do{
+            int n= sc.nextInt();
+            i++;
+            if(n%2 == 0){
+              evensum = evensum+n;
+            }
+            else{
+                oddsum = oddsum+n;
+            }
+      }while(i<=totalinputs);
+     
+      System.out.println(" Evensum: " + evensum );
+      System.out.println("oddsum: " + oddsum);
+      
+  }
+}
+
+********************************using for loop********************************************************
+
+import java.util.*;
+public class Basics{
+  public static void main(String args[]){
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Please enter total no of inputs");
+      int totalinputs=sc.nextInt();
+      int evensum = 0;
+      int oddsum = 0;
+      for(int i=0; i<totalinputs; i++){
+        int n=sc.nextInt();
+        if(n%2 == 0){
+          evensum = evensum+ n;
+        }
+        else{
+          oddsum = oddsum +n;
+        }
+      }
+      System.out.println(evensum + " "+ oddsum);
+      
+  }
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+question 3) Write a program to find the factorial of any number entered by the user.
+
+
+****************************************loop 1 to n **************************************************************
+import java.util.*;
+public class Basics{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("ENTER NO");
+    int n=sc.nextInt();
+    int fact=1;
+    for(int i=1; i<=n; i++){
+      fact = fact * i ;
+    }
+      System.out.println(fact);
+    }
+  }
+
+**************************************************** loop n to 1 ***************************************************
+import java.util.*;
+public class Basics{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("ENTER NO");
+    int n=sc.nextInt();
+    int fact=1;
+    for(int i=n; i>=1; i--){
+      fact = fact * i ;
+    }
+      System.out.println(fact);
+    }
+  }
+
+----------------------------------------------------------------------------------------
+
+question 4  Write  a program to print the multiplication table of a number N, Entered by the
+user.
+
+
+
+import java.util.*;
+public class Basics{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter number");
+    int n=sc.nextInt();
+    int table=n;
+    for(int i=1;i<=10;i++){
+      table=n*i;
+      System.out.println(table);
+    }
+  }
+}
+
+---------------------------------------------------------------------------------------------
+
+question 5 Whta is wrong in the program?
+
+public class Solution{
+  public static void main String args[]{
+      for(int i=0; i<=5; i++) {
+          System.out.println("i = " + i);
+    }
+      System.out.println("i after the loop =" + i);
+    }
+}
+
+Solution - Scope of variable is referred to the part of the program where the variable can be used.
+
+In this program variable i is declared in the for loop.
+So scope of variable i is limited for thr for loop only that is between { and } of the for loop.
+There is a display statement after the for loop where variable i is used which means i is used out of scope.
+this leads to compilation error.
+
+The program given will not run and give an error instead. To correct the program, the variable i
+needs to be declared outside the for loop.
