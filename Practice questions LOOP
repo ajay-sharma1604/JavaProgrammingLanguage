@@ -131,7 +131,7 @@ public class Basics{
 question 5 Whta is wrong in the program?
 
 public class Solution{
-  public static void main String args[]{
+  public static void main (String args[]){
       for(int i=0; i<=5; i++) {
           System.out.println("i = " + i);
     }
