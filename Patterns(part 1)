@@ -43,7 +43,7 @@ output:-
 *********
 **********
 
----------------------------------print inverted star pattern
+*********************************print inverted star pattern**************************************
 
 public class Basics{
   public static void main(String args[]){
@@ -63,7 +63,7 @@ output:-
 **
 *
 
-Printing inverted star for 10 lines
+--------------------Printing inverted star for 10 lines
 
 public class Basics{
   public static void main(String args[]){
@@ -88,3 +88,17 @@ output:-
 ***
 **
 *
+--------------------------------Another logic for above 
+
+public class Basics{
+  public static void main(String args[]){
+    int n=10;
+    for(int line =1; line<=n; line++){
+      //one line
+      for (int star =1; star<=(n-line+1); star++){
+        System.out.print("*");
+      }
+      System.out.println();
+    }
+  }
+}
