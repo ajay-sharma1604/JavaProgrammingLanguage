@@ -1,4 +1,4 @@
-******************Intro to nested loop(Star pattern)******************
+                            ******************Intro to nested loop(Star pattern)******************
 
 public class Basics{
   public static void main(String args[]){
@@ -43,7 +43,7 @@ output:-
 *********
 **********
 
-*********************************print inverted star pattern**************************************
+                                ************************print inverted star pattern**************************
 
 public class Basics{
   public static void main(String args[]){
@@ -102,3 +102,22 @@ public class Basics{
     }
   }
 }
+
+                              **************************Print Half Pyramid Pattern***************************
+
+public class Basics{
+  public static void main(String args[]){
+    for(int line=1; line<=4; line++){
+      for(int i=1; i<=line; i++){
+        System.out.print(i);
+      }
+      System.out.println();
+    }
+  }
+}
+
+Output- 
+1
+12
+123
+1234
