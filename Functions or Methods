@@ -262,4 +262,31 @@ public class Basics{
 }
 }
 
+ ************************************************  Find Factorial *****************************************************
+
+import java.util.*;
+public class Basics{
+
+  public static int Calculatefactorial(int a){
+    
+        int fact=1;
+         for(int i=1;i<=a;i++){
+          fact=fact*i;
+        }
+        return fact;
+
+  }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter number");
+        int n=sc.nextInt();
+        int result=Calculatefactorial(n);
+        System.out.println("Factorial is:" + result);
+        }
+      
+    }
+
+
+ *******************************************  Find Binomial Coefficient *********************************************************8
+
 
