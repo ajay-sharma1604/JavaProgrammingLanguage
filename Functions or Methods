@@ -205,6 +205,61 @@ public class Basics{
      System.out.println("enter valid choice");
   }
 }
+}                                        or
+
+ import java.util.*;
+public class Basics{
+
+  public static int Calculatesum(int num1,int num2){
+    int sum= (num1+num2);
+    return sum;
+  }
+  public static int Calculateproduct(int num1,int num2){
+    int product= (num1*num2);
+    return product;
+  }
+  public static int Calculatesubtract(int num1,int num2){
+    int subtract= (num1-num2);
+    return subtract;
+  }
+  public static int Calculatedivision(int num1,int num2){
+    int divide= (num1/num2);
+    return divide;
+  }
+  public static void main(String args[]){
+        Scanner sc= new Scanner (System.in);
+        System.out.println("enter 1st number");
+        int a=sc.nextInt();
+        System.out.println("enter 2nd number");
+        int b=sc.nextInt();
+        System.out.println("enter 1 for add, 2 for product, 3 for subtract,4 for divide");
+        int choice= sc.nextInt();
+  
+    switch(choice){
+      case 1:
+          int sum =Calculatesum(a,b);
+          System.out.println("Sum is:"+sum);
+          break;
+
+      case 2:
+          int product =Calculateproduct(a,b);
+          System.out.println("product is:"+product);
+          break;
+   
+      case 3:
+          int subtract =Calculatesubtract(a,b);
+          System.out.println("subtract is:"+subtract);
+          break;
+   
+     case 4:
+         int divide =Calculatedivision(a,b);
+         System.out.println("divide is:"+divide);
+         break;
+
+     default:
+         System.out.println("enter valid choice");
+  }
+}
 }
 
 
