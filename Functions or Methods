@@ -71,7 +71,7 @@ public class Basics{
        System.out.println("Hello World");
         System.out.println("Hello World");
          System.out.println("Hello World");
-    return 8;                        //You can return anything that you want//
+    return 8;                        //You can return anything that you want- if function is doing some work then it must return a value//
   }
   public static void main(String args[]){
       
