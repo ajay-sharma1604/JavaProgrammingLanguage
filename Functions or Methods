@@ -92,6 +92,11 @@ Hello World
 
 ********************************************** Syntax with parameters *****************************************************
 
+tip:
+instead of using print statement in new function, prefer return i.e function should work by returning a value. But in case of printing multiple times and also to print some text with output we got no other option
+we then have to use print statement only becuase return only give output 1 time only not multiple times and give output according to data type only so no text will be printed
+
+
 1) Calculate sum of two numbers using parameters
 
 import java.util.*;
@@ -111,4 +116,27 @@ public class Basics{
     System.out.println("Sum is:"+ sum);
   }
 }
+
+2)Calculate product of two numbers using parameters
+
+import java.util.*;
+public class Basics{
+
+  public static int Calculateproduct(int num1,int num2){
+      int product = (num1*num2);
+      return product;
+  }
+  public static void main(String args[]){
+    Scanner sc= new Scanner(System.in);
+    System.out.println("enter 1st number");
+    int a =sc.nextInt();
+    System.out.println("enter 2nd number");
+    int b=sc.nextInt();
+    int product= Calculateproduct(a,b);
+    System.out.println("Product is:" + product);
+
+  }
+}
+
+
 
