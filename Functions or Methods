@@ -1,0 +1,93 @@
+**************************Intoduction**************************
+
+1)Print hello world by making a function (void return type)
+
+public class Basics{
+  public static void printHelloWorld(){
+    System.out.println("Hello World");
+  }
+  public static void main(String args[]){
+      printHelloWorld(); //Function call
+  }
+}                           output-Hello World
+
+--------------------------------------------------------------------------------------------------
+2)Print Hello World 3 times  (void return type)
+
+public class Basics{
+  public static void printHelloWorld(){
+    System.out.println("Hello World");
+    System.out.println("Hello World");
+    System.out.println("Hello World");
+    return; //not needed in case of void return type
+  }
+  public static void main(String args[]){
+      printHelloWorld();
+  }
+}                      
+output -
+Hello World 
+Hello World 
+Hello World 
+------------------------------------------------------------------------------------------------
+3)print Hellow world 8 times (int return type)
+
+public class Basics{
+  public static int printHelloWorld(){
+    System.out.println("Hello World");
+    System.out.println("Hello World");
+    System.out.println("Hello World");
+     System.out.println("Hello World");
+      System.out.println("Hello World");
+       System.out.println("Hello World");
+        System.out.println("Hello World");
+         System.out.println("Hello World");
+    return 8;
+  }
+  public static void main(String args[]){
+      printHelloWorld();
+  }
+}                           
+
+Output-
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+
+
+                               -----(( to print return value))----
+public class Basics{
+  public static int printHelloWorld(){
+    System.out.println("Hello World");
+    System.out.println("Hello World");
+    System.out.println("Hello World");
+     System.out.println("Hello World");
+      System.out.println("Hello World");
+       System.out.println("Hello World");
+        System.out.println("Hello World");
+         System.out.println("Hello World");
+    return 8;                        //You can return anything that you want//
+  }
+  public static void main(String args[]){
+      
+      System.out.println(printHelloWorld());
+  }
+}  
+
+Output-
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+8       
+-------------------------------------------------------------------------------------------------
+
