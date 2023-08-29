@@ -327,5 +327,40 @@ public class Basics{
     System.out.println("Binomial Coefficient:" + result);
   }
 }
+  ----------------------  E A S Y WAY  ---------------------//USING HELPER FUNCTION
 
+import java.util.*;
+public class Basics{
+
+  public static int factorial(int n){
+    int f=1;
+    for(int i=1;i<=n;i++){
+      f=f*i;
+    }
+    return f;  //factorial of n
+  }
+
+  public static int binCoeff(int n, int r){
+        int fact_n =factorial(n);
+        int fact_r =factorial(r);
+        int fact_nmr=factorial(n-r);
+        int binomialcoeff = fact_n/(fact_r*fact_nmr);
+        return binomialcoeff;
+  }
+
+  
+  public static void main(String args[]){
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter n");
+      int n=sc.nextInt();
+      System.out.println("Enter r");
+      int r=sc.nextInt();
+      if(n<r){
+        System.out.println("N must be gretaer than r");
+        return;
+      }
+      System.out.println("Binomial coefficient is:" + binCoeff(n, r));
+  
+}
+}
 
