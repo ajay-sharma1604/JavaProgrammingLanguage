@@ -364,3 +364,29 @@ public class Basics{
 }
 }
 
+**************************************** Function overloading with no of parameters *****************************************
+
+import java.util.*;
+public class Basics{
+
+  //function to calculate sum of two numbers
+  public static int sum(int a,int b){
+        return a+b; //sum directly return,we dont need to store it on variable
+  }
+
+  //function to calculate sum of three numbers
+  public static int sum(int a, int b, int c){
+      return a+b+c;
+  }
+  public static void main(String args[]){
+      Scanner sc =new Scanner(System.in);
+      int a =sc.nextInt();
+      int b =sc.nextInt();
+      System.out.println(sum(a, b));                    //from user
+      System.out.println(sum(5, 6, 7));           //directly giving values;
+      
+  }
+}
+
+
+
