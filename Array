@@ -1,0 +1,12 @@
+****Creation of an Array****
+
+import java.util.*;
+public class Basics{
+    public static void main(String args[]){
+        int marks[] = new int[50];                 //by default 0 is stored in all 50 location
+        int numbers[] = {1,2,3};                   //directly giving values,java will automatically detect the size
+        int morenumbers[] = {4,5,6};
+        String fruits[] = {"apple","mango","orange"};   //String type array of size 3, detected autoatically by java
+       
+    }
+}
