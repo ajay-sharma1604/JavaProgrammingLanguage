@@ -55,3 +55,32 @@ public class Basics{
 
     }
 }
+
+
+***** Calculating Percentage *****
+
+import java.util.*;
+public class Basics{
+    public static void main(String args[]){
+        //Taking input in Array
+        Scanner sc =new Scanner(System.in);
+        int marks[] = new int[100];
+        System.out.println("Enter marks of Physics");
+        marks[0] = sc.nextInt();
+        System.out.println("Enter marks of Chemistry");
+        marks[1] = sc.nextInt();
+        System.out.println("Enter marks of Maths");
+        marks[2] = sc.nextInt();
+
+        //Output in Array
+        System.out.println("Marks of Physics:" + marks[0]);
+        System.out.println("Marks of Chemistry:" + marks[1]);
+        System.out.println("Marks of Maths:" + marks[2] );
+
+
+//Calculating percentage
+
+int percentage = (marks[0] + marks[1] + marks[2]) / 3;
+System.out.println("Percentage is:" + percentage + "%");
+    }
+}
