@@ -125,7 +125,7 @@ public class Basics{
 }
 
 
-************** Taking input from user and then changing in one function and updating in main function *************
+************** (self)  Taking input from user and then changing in one function and updating in main function *************
 
 import java.util.*;
 public class Basics{
