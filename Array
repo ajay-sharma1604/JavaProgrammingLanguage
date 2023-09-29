@@ -84,3 +84,20 @@ int percentage = (marks[0] + marks[1] + marks[2]) / 3;
 System.out.println("Percentage is:" + percentage + "%");
     }
 }
+
+
+********* To Calculate length of array *********
+
+import java.util.*;
+public class Basics{
+    public static void main(String args[]){
+       
+        Scanner sc =new Scanner(System.in);
+        int marks[] = new int[100];
+        System.out.println("Length of Array:"+ marks.length); //output is 100
+
+        //length will change if you change the size of array eg: if marks[49] then length=49
+
+        
+    }
+}
