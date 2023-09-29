@@ -263,3 +263,25 @@ public class Basics{
 
     }
 }
+
+
+****************************** Find Smallest number in array ***********************************
+
+import java.util.*;
+public class Basics{
+
+    public static int getSmallest(int numbers[]){
+        int Smallest = Integer.MAX_VALUE;
+        for(int i=0;i<numbers.length;i++){
+        if(Smallest>numbers[i]){
+            Smallest = numbers[i];
+        }
+        }
+        return Smallest;
+    }
+    public static void main(String args[]){
+        int numbers[]={8,9,5,4,1,3,2};
+        int result = getSmallest(numbers);
+        System.out.println("Smallest no is:" + result);
+    }
+}
