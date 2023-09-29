@@ -207,3 +207,37 @@ public class Basics{
     }
 }
 
+*************************** Taking inputs from user In linear Search in array *****************
+
+
+import java.util.*;
+public class Basics{
+
+    public static int linearSearch(int values[], int keq){
+        for(int i=0;i<values.length;i++){
+            if(values[i]==keq){
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public static void main(String args[]){
+        Scanner sc =new Scanner(System.in);
+        System.out.println("Enter size of array");
+        int numbers[] = new int[sc.nextInt()];
+        System.out.println("Please enter values of array");
+        for(int i=0; i<numbers.length;i++){
+            numbers[i]=sc.nextInt();
+        }
+        System.out.println("Please enter key value");
+        int key =sc.nextInt();
+        int result = linearSearch(numbers,key);
+        if(result==-1){
+            System.out.println("KEY NOT FOUND");
+        }
+        else{
+            System.out.println("Key found at index:" + result);
+        }
+    }
+}
