@@ -241,3 +241,25 @@ public class Basics{
         }
     }
 }
+
+****************************** Find largest number in array **************************************
+
+import java.util.*;
+public class Basics{
+    public static int getLargest(int numbers[]){
+        int largest = Integer.MIN_VALUE;
+        for(int i=0;i<numbers.length;i++){
+            if(largest<numbers[i]){
+                largest = numbers[i];
+            }
+        }
+        return largest;
+
+    }
+    public static void main(String args[]){
+        int numbers[]= {100,2,6,3,8};
+        int result = getLargest(numbers);
+        System.out.println("largest number is:" + result );
+
+    }
+}
