@@ -459,3 +459,33 @@ public class Basics{
         printSubarrays(numbers);
     }
 }
+
+
+_________________________________ PRINT SUM OF EACH SUBARRAY ________________________________
+
+public class Basics{
+
+    public static void printsubArrays(int num[]){
+        int temp =0;
+        for(int i=0;i<num.length;i++){
+            int start =i;
+            for(int j=i;j<num.length;j++){
+                int end =j;
+                temp =0;
+                for(int k=start;k<=end;k++){
+                  temp += num[k];
+                    
+                }
+                System.out.println(temp);
+            
+            }
+            System.out.println();
+        }
+      
+    }
+    public static void main(String args[]){
+        int num[]={2,4,6,8,10};
+        printsubArrays(num);
+
+    }
+}
