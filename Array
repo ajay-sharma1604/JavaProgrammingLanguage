@@ -491,7 +491,7 @@ public class Basics{
 }
 
 
-******************************************* Max Subarray Sum ******************************************************
+******************************************* Max Subarray Sum -o(n cube)******************************************************
 
 public class Basics{
 
@@ -557,7 +557,7 @@ public class Basics{
     }
 }
 
-************************************ Max subArray Sum (Prefix sum ) *****************************
+************************************ Max subArray Sum (Prefix sum ) -o(nsquare)*****************************
 
  public class Basics{
     public static void main(String args[]){
@@ -594,5 +594,28 @@ public class Basics{
         }
           System.out.println("maximum of all is:" + max);
     }
+}
+
+
+***************************** Max Subarray sum(Kadanes's Algorithm)- 0(n) ***********************
+public class Basics{
+    public static void main(String args[]){
+        int arr[]={-2,-3,4,-1,-2,1,5,-3};
+        kadanes(arr);
+    }
+
+        public static void kadanes(int arr[]){
+            int cs=0;
+            int ms=Integer.MIN_VALUE;
+            for(int i=0;i<arr.length;i++){
+                cs=cs+arr[i];
+                if(cs<0){
+                    cs=0;
+                }
+                ms=Math.max(cs,ms);
+            }
+            System.out.println("max subarray sum is:" + ms);
+        }
+    
 }
 
