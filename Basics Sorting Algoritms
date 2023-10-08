@@ -259,3 +259,49 @@ public class Basics{
     }
 
 }
+
+
+5) Counting sort -------------------------------------------------------------------------------------------------------------
+
+
+public class Basics{
+    public static void main(String[] args) {
+        int arr[] = {1,4,1,3,2,4,3,7};
+        countingSort(arr);
+        printArr(arr);
+    }
+
+    public static void printArr(int arr[]){
+
+        for(int i=0;i<arr.length;i++){
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+
+
+    public static void countingSort(int arr[]){
+
+        //finding the range for counting array
+        int largest =Integer.MIN_VALUE;
+        for(int i =0; i<arr.length; i++){
+            largest = Math.max(largest , arr[i]);
+        }
+
+        //making the counting array
+        int count[] = new int[largest + 1]; //largest+1 because we do 0 based indexing 
+        for(int i=0;i<arr.length;i++){
+            count[arr[i]] ++;   //traversing the original array and increasing if same no found
+        }
+
+        //sorting the original array
+        int j =0;
+        for(int i=0; i<count.length; i++){  //traversing the counting array
+                while(count[i]>0){
+                    arr[j] =i;
+                    j++;
+                    count[i]--;
+                }
+        }
+    }
+}
