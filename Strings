@@ -18,5 +18,12 @@ public class Basics{
         //output 
         System.out.println(name);
 
+         //length of string
+
+        String fullName = "Tony Stark";
+       
+        System.out.println(fullName.length());
+
+
     }
 }
