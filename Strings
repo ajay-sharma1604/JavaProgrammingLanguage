@@ -1,4 +1,4 @@
-Basics(Representation , input , output)
+*****************************     Basics(Representation , input , output)  ******************************************
 
 import java.util.*;
 
@@ -27,3 +27,18 @@ public class Basics{
 
     }
 }
+
+
+********************************* Concatination *******************************
+import java.util.*;
+
+public class Basics{
+    public static void main(String[] args) {
+      String firstName = "Ajay";
+      String lastName = "Sharma";
+      String fullName = firstName + " " +  lastName;
+      System.out.println(fullName);
+    }
+}
+
+Output: Ajay Sharma
