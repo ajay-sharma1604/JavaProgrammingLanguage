@@ -1,0 +1,22 @@
+Basics(Representation , input , output)
+
+import java.util.*;
+
+public class Basics{
+    public static void main(String[] args) {
+        //representation of string
+
+        String str = "abcd";
+        //or
+        String str2 = new String("xyz");
+        
+        //input
+        Scanner sc = new Scanner(System.in);
+        String name;
+        name=sc.nextLine(); //or sc.next()-it takes only single word(no space,no next line)
+
+        //output 
+        System.out.println(name);
+
+    }
+}
