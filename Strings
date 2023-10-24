@@ -160,3 +160,41 @@ public class Basics{
 
     }
 }
+
+
+***************************** Substrings ****************************
+
+(self)
+
+public class Basics{
+
+    public static void printSubstring(String str,int si,int ei){
+        for(int i=si;i<ei;i++){
+            System.out.print(str.charAt(i));
+        }
+    }
+    public static void main(String[] args) {
+        String str = "Helloworld";
+        printSubstring(str,0,4);
+        //System.out.println(str.substring(3,5));
+    }
+}
+
+
+Above in different way:-(original)
+
+public class Basics{
+
+    public static String substring(String str,int si,int ei){
+        String substr ="";
+        for(int i=si;i<ei;i++){
+            substr += str.charAt(i);
+        }
+        return substr;
+    }   
+    public static void main(String[] args) {
+        String str = "Helloworld";
+        System.out.println(substring(str,0,5));
+        
+    }
+}
