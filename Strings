@@ -164,7 +164,7 @@ public class Basics{
 
 ***************************** Substrings ****************************
 
-(self)
+(self) -In my program no substring is created only character is printing 
 
 public class Basics{
 
@@ -181,7 +181,7 @@ public class Basics{
 }
 
 
-Above in different way:-(original)
+Above in different way:-(original) -IN this first substring is created and then it gets printed
 
 public class Basics{
 
