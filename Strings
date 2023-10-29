@@ -329,3 +329,41 @@ public class Basics{
         System.out.println(compressString(str));
     }
 }
+
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+Practice question:- 
+
+question:-Count how many times lowercase vowels occurred in a String entered by the user
+
+import java.util.*;
+public class Basics{
+
+    public static void main(String[] args) {
+    Scanner sc =new Scanner(System.in);
+    System.out.println("Please input the String");
+    String str = sc.nextLine();
+    int count = 0;
+    for(int i=0;i<str.length();i++){
+        if(str.charAt(i)== 'a') {
+            count++;
+        }
+        else if(str.charAt(i)== 'e') {
+            count++;
+        }
+        else if(str.charAt(i)== 'i') {
+            count++;
+        }
+        else if (str.charAt(i)== 'o') {
+            count++;
+        }
+        else if(str.charAt(i)== 'u') {
+            count++;
+        }
+    }
+    System.out.println(count);
+
+    }
+}
