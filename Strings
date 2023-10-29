@@ -367,3 +367,51 @@ public class Basics{
 
     }
 }
+------------------------------------------------------------------------------------------
+
+question:-Determine if 2 strings are anagrams of each other.
+
+anagrams - two strings when contain the same characters but in different order. eg: race and care
+
+
+import java.util.*;
+public class Basics{
+
+    public static void main(String[] args) {
+    Scanner sc =new Scanner(System.in);
+
+    //taking 2 input Strings
+    System.out.println("Please input the String");
+    String str1 = sc.nextLine();
+    System.out.println("Please input the String");
+    String str2 = sc.nextLine();
+
+    str1.toLowerCase(); str2.toLowerCase(); //to avoid lower or upper problem
+
+    //solve only if lengths of strings  are equal
+    if(str1.length() == str2.length()){
+
+    //covert strings into char array
+    char str1array[] = str1.toCharArray();
+    char str2array[] = str2.toCharArray();
+
+    //sort the above array
+    Arrays.sort(str1array);
+    Arrays.sort(str2array);
+
+    //compare -Arrays.equals(Arr1,Arr2) - if Arr1= Arr2: True ; else False
+    if(Arrays.equals(str1array,str2array)){
+        System.out.println("true,strings are anagrams");
+    }
+    else{
+        System.out.println("false,strings are not anagrams");
+    }
+}
+//case when length of strings are not equal
+    else{
+        System.out.println("False,since lengths are not equal");
+
+}
+   
+    }
+}
