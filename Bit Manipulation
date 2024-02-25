@@ -1,0 +1,21 @@
+1) Check number is even or odd
+
+import java.util.*;
+public class Basics{
+
+    public static void oddOrEven(int n){
+        int bitMask =1;
+        if((n & bitMask) == 0){
+            //evennumber
+            System.out.println("Even number");
+        }
+        else{
+            System.out.println("odd numner");
+        }
+    }
+    public static void main(String[] args) {
+        oddOrEven(3);
+        oddOrEven(11);
+        oddOrEven(14);
+    }
+}
