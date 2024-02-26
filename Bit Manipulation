@@ -127,7 +127,7 @@ public class Basics{
         Scanner sc =new Scanner(System.in);
         int n= sc.nextInt();
         int i=sc.nextInt();
-        int newBit = 1; //1
+        int newBit = 1; //0
         System.out.println(updateIthBit(n, i, newBit));
     }
 }
