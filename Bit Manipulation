@@ -39,3 +39,17 @@ public class Basics{
         getIthBit(8,1);
     }
 }
+
+3) set ith bit
+
+import java.util.*;
+public class Basics{
+
+    public static void setIthBit(int n ,int i){
+        int bitmask= 1<<i;;
+        System.out.println((n|1<<i));
+    }
+    public static void main(String[] args) {
+        setIthBit(10,2);
+    }
+}
