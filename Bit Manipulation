@@ -68,3 +68,40 @@ public class Basics{
         clearIthBit(10,1);
     }
 }
+
+5) Update ith Bit
+
+import java.util.*;
+public class Basics{
+
+    public static int setIthBit(int n, int i){
+        //makes the ith bit =1
+        int bitmask =1<<i;
+       return (n | bitmask);
+    }
+
+    public static int clearIthBit(int n ,int i){
+        //makes the ith bit =0
+        int bitMask =~(1<<i);
+       return(n & bitMask);
+    }
+
+    public static int updateIthBit(int n, int i, int newBit){
+        if(newBit == 0){
+            return clearIthBit(n, i);
+        }
+        else{
+            return setIthBit(n, i);
+        }
+
+    }
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        int n= sc.nextInt();
+        int i=sc.nextInt();
+        int newBit = 1; //1
+        clearIthBit(n,i);
+        setIthBit(n,i);
+        System.out.println(updateIthBit(n, i, newBit));
+    }
+}
