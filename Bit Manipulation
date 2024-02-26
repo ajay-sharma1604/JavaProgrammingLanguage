@@ -100,8 +100,34 @@ public class Basics{
         int n= sc.nextInt();
         int i=sc.nextInt();
         int newBit = 1; //1
-        clearIthBit(n,i);
-        setIthBit(n,i);
+        System.out.println(updateIthBit(n, i, newBit));
+    }
+}
+
+
+******************* Another approach
+
+import java.util.*;
+public class Basics{
+
+
+    public static int clearIthBit(int n ,int i){
+        //makes the ith bit =0
+        int bitMask =~(1<<i);
+       return(n & bitMask);
+    }
+
+    public static int updateIthBit(int n, int i, int newBit){
+       n =clearIthBit(n, i);
+       int BitMask =newBit<<i;
+       return n | BitMask;
+
+    }
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        int n= sc.nextInt();
+        int i=sc.nextInt();
+        int newBit = 1; //1
         System.out.println(updateIthBit(n, i, newBit));
     }
 }
