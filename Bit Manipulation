@@ -131,3 +131,20 @@ public class Basics{
         System.out.println(updateIthBit(n, i, newBit));
     }
 }
+
+
+6) Clear last i bits
+
+import java.util.*;
+public class Basics{
+
+    public static int clearIthBits(int n, int i){
+        int bitmask = (-1)<<i;
+        return n & bitmask ;
+    }
+    public static void main(String[] args) {
+        int n= 15;
+        int i=2;
+        System.out.println(clearIthBits(n,i));
+    }
+}
