@@ -238,6 +238,11 @@ Practice question:
 
 1)What is the value of x^x for any value of x
 
+
+xor gives 0 when bits are same. if we compare the same number to itself, the bits will always be the same, so the 
+answer of x^x will always be 0
+
+
 2) Swap two numbers without using any third variable
 
 public class Basics{
