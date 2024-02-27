@@ -167,3 +167,19 @@ public class Basics{
         System.out.println(clearBitsinRange(n,i,j));
     }
 }
+
+
+8) Check if a number is a power of 2 or not
+
+import java.util.*;
+public class Basics{
+
+    public static boolean isPowerOfTwo(int n){
+        return (n&(n-1))==0;
+    }
+       
+    public static void main(String[] args) {
+        int n= 15;
+        System.out.println(isPowerOfTwo(n));
+    }
+}
