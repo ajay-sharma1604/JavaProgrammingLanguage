@@ -274,3 +274,16 @@ public class Basics{
         System.out.println(z + "+" + 1 + " = "+ -~z);
     }
 }
+
+
+4) Convert uppercase characters to lowercase using bits.
+
+public class basics{
+    public static void main(String[] args){
+//convert uppercase character to lowercase
+        for(char ch= 'A'; ch<= 'Z' ; ch++){
+            System.out.print((char)(ch|' '));
+//print abcdefghijklmnopqrstuvwxyz
+        }
+    }
+}
