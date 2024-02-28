@@ -87,3 +87,40 @@ class Pen{
                             //this.tip is property "tip" of the Pen
     }
 }
+
+
+3) Constructor
+
+public class Basics{
+    public static void main(String[] args) {
+        Student s1 =new Student("Brocklesnar");   //when constructor is called name is passed as parameter
+        System.out.println(s1.name);
+     }
+}
+
+class Student{
+    String name;
+    int roll;
+
+    Student(String name){
+        //parameter name is passed to property name using this keyword
+        this.name = name ;  //initisalize the value of object using constructor
+    }
+}
+
+------------------------------------------------
+
+public class Basics{
+    public static void main(String[] args) {
+        Student s1 =new Student(); 
+}
+}
+class Student{
+    String name;
+    int roll;
+
+    //when we dont want to pass the value in constructor we can simply print also
+    Student(){
+       System.out.println("constructor is called");
+    }
+}
