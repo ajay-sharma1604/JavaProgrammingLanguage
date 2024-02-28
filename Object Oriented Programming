@@ -39,3 +39,51 @@ class Student{
         percentage =(phy + chem + math) /3;
     }
 }
+
+
+2)Getter and Setters
+
+public class Basics{
+    public static void main(String[] args) {
+        Pen p1= new Pen();  //created a pen object called p1
+
+        //set color to blue abd print by get
+        p1.setColor("Blue");
+        System.out.println(p1.getColor());
+
+        //set tip to 5 and print by get
+        p1.setTip(5);
+        System.out.println(p1.getTip());
+
+        //set color to yellow and print by get
+        p1.setColor("Yellow");
+        System.out.println(p1.getColor());
+    }
+}
+
+class Pen{
+    private String color;
+    private int tip;
+
+    //Getters
+
+    String getColor(){      //get function get the value from object calling it
+        return this.color;  //this will return the object value which is calling get function
+    }
+
+    int getTip(){   //get function get the value from object calling it
+        return this.tip;//this return the value by object
+    }
+
+    //Setters
+
+
+    void setColor(String newColor){ //set function is modifying the value
+        this.color =newColor;   //this will return the modified value
+    }
+
+    void setTip(int tip){//set function is modifying the value
+        this.tip =tip;      //this return modified value
+                            //this.tip is property "tip" of the Pen
+    }
+}
