@@ -522,3 +522,32 @@ class Chicken extends Animal{
         System.out.println("walks on 2 legs");
     }
 }
+
+
+
+//first parent class constructor is called then next and then next
+
+public class Basics{
+    public static void main(String[] args) {
+        Mustang m =new Mustang();
+        //Animal ->Horse ->Mustang
+    }
+}
+
+abstract class Animal{
+    Animal(){
+        System.out.println("Animal constructor called");
+    }
+}
+
+class Horse extends Animal{
+    Horse(){
+        System.out.println("Horse constructor called");
+    }
+}
+
+class Mustang extends Horse{
+    Mustang(){
+        System.out.println("Mustang constructor called");
+    }
+}
