@@ -458,6 +458,10 @@ class Deer extends Animal{
 
 11) Abstract class
 
+//whenever we create object of child class then firstly constructor of parent class is called 
+
+//constructor not only used for initislize object but also used for intisaling variable for child class object
+
 public class Basics{
     public static void main(String[] args) {
         Horse h =new Horse();
@@ -470,26 +474,50 @@ public class Basics{
         //We cannot create any abject of an abstract class
         //Animal a =new Animal(); -this will give error
 
+        System.out.println(h.color);
+        System.out.println(c.color);
+        
+         h.changeColor();
+         c.changeColor();
     }
 }
 
 abstract class Animal{
 
+    String color;
+    //creating constructor
+
+    Animal(){
+        color ="brown";
+    }
+
     void eats(){
         System.out.println("animal eats");
     }
 
-    abstract void walk(); //it is not implementation but idea that tells walk function must exist with return type void and wiht no parameter 
-                        //and this must be present in each dervied class
+    abstract void walk(); //it is not implementation but idea that tells walk function must exist with return type void and wiht no parameter and this must be present in each dervied class
 }
 
 class Horse extends Animal{
+
+    //by default color of horse will be brown because of constructor of parent class and change when changeColor function is called of child class
+
+    void changeColor(){
+        color="dark brown";
+        System.out.println(color);
+    }
     void walk(){
         System.out.println("walks on 4 legs");
     }
 }
 
 class Chicken extends Animal{
+//by default color of chicken will be brown because of constructor of parent class and change when changeColor function is called of child class
+
+    void changeColor(){
+        color="yellow";
+        System.out.println(color);
+    }
     void walk(){
         System.out.println("walks on 2 legs");
     }
