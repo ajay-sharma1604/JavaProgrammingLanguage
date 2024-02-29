@@ -124,3 +124,36 @@ class Student{
        System.out.println("constructor is called");
     }
 }
+
+
+3) Type of constructors
+
+public class Basics{
+    public static void main(String[] args) {
+        //default is made by java when no other constructor is already present
+
+        //constructor overloading
+        Student s1 =new Student(); 
+        Student s2 =new Student("ajay");
+        Student s3 =new Student(123);
+}
+}
+class Student{
+    String name;
+    int roll;
+
+    //non paramterized constructor
+    Student(){
+       System.out.println("constructor is called");
+    }
+
+    //paramterised constructor with string paramter
+    Student(String name){
+        this.name =name;
+    }
+
+    //parameterised constructor with integer parameter
+    Student(int roll){
+        this.roll=roll;
+    }
+}
