@@ -300,3 +300,44 @@ class Fish extends Animal {
         System.out.println("swims in water");
     }
 }
+
+7) MultiLevel Inheritaance
+
+public class Basics{
+    public static void main(String[] args) {
+        Dog tommy = new Dog();
+        tommy.eat();
+        tommy.legs =4;
+        System.out.println(tommy.legs);
+    }
+}
+
+
+//Base Class
+class Animal{
+
+    String color;
+
+    void eat(){
+        System.out.println("eats");
+    }
+
+    void breathe(){
+        System.out.println("breathes");
+    }
+}
+
+//Derived or sub class
+class Mammal extends Animal {
+
+    int legs;
+
+}
+
+
+//Derived class
+class Dog extends Mammal{
+
+    String breed;
+
+}
