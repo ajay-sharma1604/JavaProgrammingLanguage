@@ -551,3 +551,35 @@ class Mustang extends Horse{
         System.out.println("Mustang constructor called");
     }
 }
+
+
+12) Interfaces
+
+public class Basics{
+    public static void main(String[] args) {
+        Queen q =new Queen();
+        q.moves();
+    }
+}
+
+interface chessPlayer{
+    void moves();//by defualt public and abstract,implementation cannot be writen becuase we want to achieve abstraction
+}
+
+class Queen implements chessPlayer{//function need to be recreated with implementation
+    public void moves(){//public keyword must be written otherwise by default moves will be default type
+        System.out.println("up,doen,left,right,diagonal (in all 4 direction)");
+    }
+}
+
+class Rook implements chessPlayer{
+    public void moves(){
+        System.out.println("up,down,left,right");
+    }
+}
+
+class King implements chessPlayer{
+    public void moves(){
+        System.out.println("up,down,left,right,diagonal (by 1 step)");
+    }
+}
