@@ -649,3 +649,25 @@ class Student{
         return this.name;
     }
 }
+
+
+//making static functions
+
+//Static objects are created only one time in the memory
+
+//Properties static
+public class Basics{
+    public static void main(String[] args) {
+       
+    }
+}
+
+class Student{
+   //logic is same so function will not be created multiple times
+
+   //function for calculating percentage
+
+   static int returnPercentage(int math, int phy, int chem){
+    return(math+phy+chem)/3;
+   }
+}
