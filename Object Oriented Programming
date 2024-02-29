@@ -203,3 +203,62 @@ class Student{
         System.out.println("constrcutor is called");
     }
 }
+
+
+5) Shallow and deep copy
+
+public class Basics{
+
+    public static void main(String[] args) {
+        Student s1 =new Student();
+        s1.name ="ajay";
+        s1.roll =123;
+        s1.password ="abcd";
+        s1.marks[0]=100;
+        s1.marks[1]=90;
+        s1.marks[2]=80;
+
+        Student s2 =new Student(s1);//pass s1 as paramter
+       s2.password ="xyz";
+        s1.marks[2]=100; //s2 is changed even copied before because only reference is copied of the array
+       //printing s2 marks
+
+       for(int i=0;i<3;i++){
+        System.out.println(s2.marks[i]);
+       }
+    }
+}
+
+class Student{
+    String name;
+    int roll;
+    String password;
+    int marks[];
+
+                                //Shallow copy constructor-s2  marks are changed 
+    //copy constructor
+    //all properties of s1 copied to s2 by passing Student s1 as paramter(khudkaobject  in constrcutor  as paramter)
+    // Student(Student s1){
+    //     this.name= s1.name;
+    //     this.roll=s1.roll;
+    //     marks =new int[3];
+    //     this.marks=s1.marks;
+    // }
+
+
+                            //deep copy constructor-this time s2 marks will be unchanged 
+    Student(Student s1){
+        this.name= s1.name;
+         this.roll=s1.roll;
+         marks =new int[3];
+         for(int i=0;i<3;i++){
+            this.marks[i]=s1.marks[i];
+         }
+    }
+
+
+    Student(){
+        marks=new int[3];
+        System.out.println("constrcutor is called");
+    }
+}
