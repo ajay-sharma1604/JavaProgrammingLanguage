@@ -613,3 +613,39 @@ class Bear implements Herbivore, Carnivore {//1st interface,2nd interface-we can
         System.out.println("bear runs very fast");
     }
 }
+
+
+13) Static Keyword
+
+//Static objects are created only one time in the memory
+
+//Properties static
+public class Basics{
+    public static void main(String[] args) {
+        Student s1= new Student();
+        s1.schoolName="abcd";
+
+        Student s2= new Student();
+        System.out.println(s2.schoolName);
+
+        Student s3= new Student();
+        s3.schoolName="pqrs";
+
+        System.out.println(s2.schoolName);
+    }
+}
+
+class Student{
+    String name;
+    int roll;
+
+    static String schoolName;
+
+    void setName(String name){
+        this.name=name;
+    }
+
+    String getName(){
+        return this.name;
+    }
+}
