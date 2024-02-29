@@ -583,3 +583,33 @@ class King implements chessPlayer{
         System.out.println("up,down,left,right,diagonal (by 1 step)");
     }
 }
+
+
+--------------------Multiple Inheritance 
+
+public class Basics{
+    public static void main(String[] args) {
+        Bear b =new Bear();
+        b.eats();
+        b.walk();
+    }
+}
+
+interface Herbivore {
+    void eats();
+}
+
+interface Carnivore{
+    void eats();
+    void walk();
+}
+
+class Bear implements Herbivore, Carnivore {//1st interface,2nd interface-we can inherit as many interfaces properites as we want
+    public void eats(){
+        System.out.println("Eats grass and also meat");
+    }
+
+    public void walk(){
+        System.out.println("bear runs very fast");
+    }
+}
