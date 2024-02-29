@@ -388,3 +388,36 @@ class Bird extends Animal{
         System.out.println("fly");
     }
 }
+
+
+9) Method Overloading
+
+//COMPILE TIME POLYMORPHISM - METHOD OVERLOADING
+
+
+public class Basics{
+
+    public static void main(String[] args) {
+        Calculator calc =new Calculator();
+        System.out.println(calc.sum(1, 2));
+        System.out.println(calc.sum(1.5f,2.5F));
+        System.out.println(calc.sum(1,2,3));
+    }
+}
+
+class Calculator{
+
+
+    //parameters differ by type and count
+    int sum(int a,int b){
+        return a+b;
+    }
+
+    float sum(float a, float b){
+        return a+b;
+    }
+
+    int sum(int a,int b, int c){
+        return a+b+c;
+    }
+}
