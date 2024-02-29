@@ -262,3 +262,41 @@ class Student{
         System.out.println("constrcutor is called");
     }
 }
+
+
+6) Inheritance
+
+
+//properties and fucntion of animal can be called for fish
+
+public class Basics{
+    public static void main(String[] args) {
+        Fish shark =new Fish();
+        shark.eat(); //this function is not in fish but fish is derived class of animal,by defualt shark will automaticallly have eat function
+    }
+}
+
+
+//Base Class
+class Animal{
+
+    String color;
+
+    void eat(){
+        System.out.println("eats");
+    }
+
+    void breathe(){
+        System.out.println("breathes");
+    }
+}
+
+//Derived or sub class
+class Fish extends Animal {
+
+    int fins;
+
+    void swim(){
+        System.out.println("swims in water");
+    }
+}
