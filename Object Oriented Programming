@@ -421,3 +421,33 @@ class Calculator{
         return a+b+c;
     }
 }
+
+
+10) Method Overriding
+
+//RUN TIME POLYMORPHISM - METHOD OVERRIDING
+
+//parents class and child class have same function with diff definition
+public class Basics{
+
+    public static void main(String[] args) {
+       Deer d =new Deer();
+       d.eats();//IT WILL CALL CHILD CLASS OBJECT
+    }
+}
+
+
+class Animal{
+
+    void eats(){
+        System.out.println("eats anything");
+    }
+}
+
+
+class Deer extends Animal{
+
+    void eats(){
+        System.out.println("eats grass");
+    }
+}
