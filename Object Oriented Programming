@@ -393,7 +393,7 @@ class Bird extends Animal{
 9) Method Overloading
 
 //COMPILE TIME POLYMORPHISM - METHOD OVERLOADING
-
+//compiler in its compile time already know when to call which function
 
 public class Basics{
 
