@@ -24,6 +24,26 @@ public class Basics{
 public class Basics{
 
     public static void printIncreasing(int n){
+    
+    if(n==1){//base case
+        System.out.print(n+ " ");
+        return;
+    }
+       printIncreasing(n-1);
+       System.out.print(n+ " ");
+    }
+
+    public static void main(String[] args) {
+        int n =10;
+        printIncreasing(n);
+    }
+}
+
+-----------------------------another method 
+
+public class Basics{
+
+    public static void printIncreasing(int n){
         if(n==10){
             System.out.println(n);
             return;
