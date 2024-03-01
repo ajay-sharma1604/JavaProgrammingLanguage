@@ -57,3 +57,23 @@ public class Basics{
         printIncreasing(n);
     }
 }
+
+
+-------------------- Find Factorial of a number
+
+public class Basics{
+
+    public static int printFact(int n){
+
+        if(n==0){//0!=1
+            return 1 ;
+        }
+        int factnminusone = printFact(n-1);
+        int factn= (n*factnminusone);
+        return factn;
+    }
+    public static void main(String[] args) {
+        int n=4;
+        System.out.println(printFact(n));
+    }
+}
