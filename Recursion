@@ -181,3 +181,20 @@ public class Basics{
         System.out.println(lastOcc(arr,5,arr.length));
     }
 }
+
+
+-------------------------Print x to the power n
+
+public class Basics{
+
+    public static int calPower(int x, int n){
+       //Basecase
+       if(n==0){
+            return 1;
+        }
+        return x*calPower(x,n-1);
+    }
+    public static void main(String[] args) {
+        System.out.println(calPower(2,10));
+    }
+}
