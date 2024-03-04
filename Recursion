@@ -138,3 +138,25 @@ public class Basics{
 
     }
 }
+
+
+--------------------------------- Find the first occurence of an element in an array
+
+public class Basics{
+
+    public static int firstOcc(int arr[], int num, int i){
+
+        if(i==arr.length){//basecase 
+            return -1;
+        }
+        if(arr[i]==num){
+            return i;
+        }
+       
+        return firstOcc(arr, num, i+1);
+    }
+    public static void main(String[] args) {
+        int arr[]={1,2,3,4,4,5,6,7,6,9,8};
+        System.out.println(firstOcc(arr, 12, 0));
+    }
+}
