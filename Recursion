@@ -211,7 +211,8 @@ public class Basics{
             return 1;
         }
         //n is even
-        int halfPowerSq = optimizedPower(a, n/2) * optimizedPower(a, n/2);
+        int halfPower= optimizedPower(a, n/2);
+        int halfPowerSq =halfPower * halfPower;
 
         //n is odd
         if(n%2 != 0){
@@ -221,6 +222,6 @@ public class Basics{
         return halfPowerSq;
     }
     public static void main(String[] args) {
-        System.out.println(optimizedPower(2,10));
+        System.out.println(optimizedPower(2,5));
     }
 }
