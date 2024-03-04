@@ -160,3 +160,24 @@ public class Basics{
         System.out.println(firstOcc(arr, 12, 0));
     }
 }
+
+
+----------------------------------Find the last occurence of an elemen in an array
+
+public class Basics{
+
+    public static int lastOcc(int arr[], int key, int i){
+        //Basecase
+        if(i==0){
+            return -1;
+        }
+        if(arr[i-1]==key){
+            return i-1;
+        }
+        return lastOcc(arr, key, i-1);
+    }
+    public static void main(String[] args) {
+        int arr[]={8,5,2,3,6,9,9,6,5};
+        System.out.println(lastOcc(arr,5,arr.length));
+    }
+}
