@@ -252,3 +252,38 @@ public class Basics{
         System.out.println(tilingProblem(4));
     }
 }
+
+
+---------------------------------- remove duplicates in a string
+
+public class Basics{
+
+    public static void duplicateString(String str, int idx, StringBuilder newStr, boolean map[]){
+
+        //basecase
+        if(idx==str.length()){
+            System.out.println(newStr);
+            return;
+        }
+
+        char currElement = str.charAt(idx);
+        //element already present
+        if(map[currElement-'A']== true){
+            duplicateString(str, idx+1, newStr, map);
+        }
+        //element not present
+        else{
+            map[currElement-'A'] =true;
+            duplicateString(str, idx+1, newStr.append(currElement), map);
+
+        }
+        
+        }
+    
+    public static void main(String[] args) {
+        String str ="NIKITA";
+        StringBuilder sb =new StringBuilder("");
+        boolean arr[] =new boolean[26];
+        duplicateString(str,0,sb,arr);
+    }
+}
