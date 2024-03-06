@@ -394,8 +394,6 @@ NOTE-The digits of the number will only be in the range0-9 and the lastdigit of 
 Sample input: 1947
 Sample output: "one nine four seven"
 
-
-
 public class Basics{
 
     public static void printDigits(int n){
@@ -412,3 +410,6 @@ public class Basics{
 
     }
 }
+
+3) Write a program to find Length of s String using Recursion.
+
