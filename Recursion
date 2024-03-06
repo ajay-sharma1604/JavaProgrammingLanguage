@@ -413,3 +413,26 @@ public class Basics{
 
 3) Write a program to find Length of s String using Recursion.
 
+public class Basics{
+
+    public static int printStrLength(String str){
+        //basecase-if string is empty
+       if(str.length()==0){
+        return 0;
+       }
+       return printStrLength(str.substring(1)) + 1;
+    
+    }
+    public static void main(String[] args) {
+       System.out.print(printStrLength("ajay"));
+
+    }
+}
+
+4) We are given a string S, we need to find the count of all contiguous substrings 
+starting and ending with the same character.
+
+Sample Input 2: S = "aba"
+Sample Output 2: 4
+The substrings are a, b, a and aba.
+
