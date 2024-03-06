@@ -330,3 +330,31 @@ public class Basics{
         System.out.println(friendsPairing(3));
     }
 }
+
+
+------------------------  Binary Strings Problem
+
+public class Basics{
+
+    public static void printBinaryStrings(int n , int lastPlace, String str){
+        //basecase n=0, print empty string
+        if(n==0){
+            System.out.println(str);
+            return;
+        }
+
+        printBinaryStrings(n-1,0,str+"0");
+
+        if(lastPlace==0){
+            printBinaryStrings(n-1, 1, str+"1");
+        }
+
+
+    }
+    public static void main(String[] args) {
+        int n=3;
+        int lastPlace =0;
+        String str ="";
+        printBinaryStrings(n,lastPlace,str);
+    }
+}
