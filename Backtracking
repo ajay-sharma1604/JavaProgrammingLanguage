@@ -76,3 +76,40 @@ bc
 b
 c
 null
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+ques) Find Permutation of String
+
+public class Java {
+
+    public static void findPermutation(String str, String ans) {
+
+        // basecase
+        if (str.length() == 0) {
+            System.out.println(ans);
+            return;
+        }
+        // recursion
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            String Newstr = str.substring(0, i) + str.substring(i + 1);
+            findPermutation(Newstr, ans + ch);
+        }
+    }
+
+    public static void main(String[] args) {
+        String str = "abc";
+        findPermutation(str, "");
+    }
+}
+
+output:-
+abc
+acb
+bac
+bca
+cab
+cba
+
