@@ -874,3 +874,35 @@ Output:
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+                                                                          Delete NthnodeFromEnd
+
+  public void deleteNthfromEnd(int n) {
+
+        // calculate size
+        int sz = 0;
+        Node temp = head;
+        while (temp != null) {
+            temp = temp.next;
+            sz++;
+        }
+
+        // head element delete
+        if (n == sz) {
+            head = head.next; // removeFirst
+            return;
+        }
+
+        // all other element delete- size-n
+        int i = 1;
+        int iToFind = sz - n;
+        Node prev = head;
+        while (i < iToFind) {
+            prev = prev.next; // prev=2
+            i++;
+        }
+        prev.next = prev.next.next;// 2->4
+        return;
+
+    }
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
