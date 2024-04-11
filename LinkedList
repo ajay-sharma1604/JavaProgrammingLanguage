@@ -79,6 +79,45 @@ public class LinkedList {
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                         Add last
 
+public class LinkedList {
+    public static class Node {
+        int data;
+        Node next;
+
+        // Constructor
+        public Node(int data) {
+            this.data = data;
+            this.next = null;
+        }
+    }
+
+    public static Node head;
+    public static Node tail;
+
+    public void addLast(int data) {
+        // create new node
+        Node newNode = new Node(data);
+
+        // special case-empty ll
+        if (head == null) { // tail==null is also correct but by convention when head is null then we
+                            // consider ll is empty
+
+            head = tail = newNode;
+            return;
+        }
+
+        tail.next = newNode;
+        tail = newNode;
+    }
+
+    public static void main(String args[]) {
+        LinkedList ll = new LinkedList();
+        ll.addLast(3);
+        ll.addLast(4);
+
+    }
+}
+
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
