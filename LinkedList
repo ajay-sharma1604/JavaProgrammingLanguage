@@ -723,15 +723,15 @@ public class LinkedList {
     public int helper(Node head, int key) {
 
           // base case
-        if (temp == null) {
+        if (head == null) {
             return -1;
         }
-        if (temp.data == key) {
+        if (head.data == key) {
             return 0;
         }
 
         // recursion
-        int index = helper(temp.next, key);
+        int index = helper(head.next, key);
         if (index == -1) {
             return -1;
         }
