@@ -54,3 +54,78 @@ public class StackB {
         }
     }
 }
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                    Stack using LinkedList
+public class StackB {
+    // Node class representing node of linked list
+    static class Node {
+        int data;
+        Node next;
+
+        // constructor
+        Node(int data) {
+            this.data = data;
+            this.next = null;
+        }
+    }
+
+    static class Stack {
+        // creating Head node -static type so all func able to access this
+
+        static Node head = null; // initialize head with null
+
+        // isEmpty()
+        public static boolean isEmpty() {
+            return head == null; // when head is null then ll is empty return true, else false
+        }
+
+        // push()
+        public static void push(int data) {
+            // create new node
+            Node newNode = new Node(data);
+            // check ll is empty -if yes then new node directly become head node
+            if (isEmpty()) {
+                head = newNode;
+                return;
+            }
+            newNode.next = head;
+            head = newNode;
+        }
+
+        // pop()
+        public static int pop() {
+
+            // check if stack is empty or not
+            if (isEmpty()) {
+                return -1;
+            }
+
+            // remove head, make next node head
+            int top = head.data;
+            // head.next = null; -value return and removed, this line is not needed
+            head = head.next;
+            return top;
+        }
+
+        public static int peek() {
+            // check if stack is empty
+            if (isEmpty()) {
+                return -1;
+            }
+            return head.data; // headdata =top of stack
+        }
+    }
+
+    public static void main(String[] args) {
+        // creating Stack
+        Stack s = new Stack();
+        s.push(1);
+        s.push(2);
+        s.push(3);
+
+        while (!s.isEmpty()) {
+            System.out.println(s.peek()); // see
+            s.pop(); // delete
+        }
+    }
+}
