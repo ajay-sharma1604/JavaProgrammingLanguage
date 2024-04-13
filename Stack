@@ -288,8 +288,8 @@ public class StackB {
         // calculate span of each day
         for (int i = 1; i < stocks.length; i++) {
             int currPrice = stocks[i];
-            while (!s.isEmpty() && currPrice > stocks[s.peek()]) {
-                s.pop(); // remove all elements smaller than curr
+            while (!s.isEmpty() && currPrice >= stocks[s.peek()]) {
+                s.pop(); // remove all elements smaller than or equal to than curr
             }
             // small elements remove karte karte stack empty??
             if (s.isEmpty()) {
@@ -322,7 +322,7 @@ output:-
 2 
 1 
 5
-6
+7
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
