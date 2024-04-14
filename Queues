@@ -461,4 +461,48 @@ Output:-
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+                                                                      First non-repeating letter in a Stream of Characters
+
+import java.util.*;
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Basics {
+    public static void printfirstNonRepeating(String str) {
+        // create freq arr and queue
+        int freq[] = new int[26];
+        Queue<Character> q = new LinkedList<>();
+
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            q.add(ch); // store char in queue
+            freq[ch - 'a']++; // increase freq of char
+
+            // until queue gets empty and freq>1(non repeating char)-remove
+            while (!q.isEmpty() && freq[q.peek() - 'a'] > 1) {
+                q.remove();
+            }
+            // above cond false- case1:queue empty and case2:freq=1
+            // queue empty
+            if (q.isEmpty()) {
+                System.out.print(-1 + " ");
+            }
+            // found 1st non repeating element in queue first
+            else {
+                System.out.print(q.peek() + " ");
+            }
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        String str = "aabccxb";
+        printfirstNonRepeating(str);
+    }
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
