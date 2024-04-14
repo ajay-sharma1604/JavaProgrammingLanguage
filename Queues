@@ -264,6 +264,7 @@ public class QueueB {
 }
 
 //  Generic error- below code remove this error
+//Ensure you are importing the correct Queue class from java.util and not using any custom Queue class that might not be generic.
 
 import java.util.Queue;
 import java.util.LinkedList;
