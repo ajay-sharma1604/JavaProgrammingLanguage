@@ -266,6 +266,10 @@ public class QueueB {
 //  Generic error- below code remove this error
 //Ensure you are importing the correct Queue class from java.util and not using any custom Queue class that might not be generic.
 
+In the context of Java programming, generics allow you to create classes, interfaces, and methods that operate with unspecified data types. 
+This provides you with the ability to define classes and methods that are capable of working with any data type, rather than being tied to a specific type.
+Generics provide type safety, allowing you to catch errors at compile time rather than at runtime, and they also enable you to write more reusable and flexible code.
+
 import java.util.Queue;
 import java.util.LinkedList;
 import java.util.ArrayDeque;
