@@ -43,6 +43,9 @@ public class Basics {
     }
 }
 
+Output-
+max acitivities = 4
+A0 A1 A3 A4 
                                           or(when activities are not sorted)- O(nlogn)
 
 import java.util.*;
@@ -90,3 +93,9 @@ public class Basics {
         System.out.println();
     }
 }
+
+
+Output-
+max acitivities = 4
+A0 A1 A3 A4 
+----------------------------------------------------------------------------------------------
