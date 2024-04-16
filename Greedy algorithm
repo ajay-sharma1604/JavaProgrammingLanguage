@@ -169,11 +169,34 @@ public class Basics {
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
+                                                Maximum Length chain of pairs
 
+import java.util.*;
 
+public class Basics {
+    public static void main(String[] args) { // O(nlogn)
+        int pairs[][] = { { 5, 24 }, { 39, 60 }, { 5, 28 }, { 27, 40 }, { 50, 90 } };
 
+        // sort pairs-1st col i.e 2nd number basis
+        Arrays.sort(pairs, Comparator.comparingDouble(o -> o[1]));
 
+        // 1ST PAIR-Added
+        int chainLen = 1;
+        int chainEnd = pairs[0][1];// last selected pair end-ending part of 1st pair
 
+        // Other Pair
+        for (int i = 1; i < pairs.length; i++) { // check start>chainend
+            if (pairs[i][0] > chainEnd) {
+                chainLen++;
+                // this pair now included in chain-chainend will be this pair end
+                chainEnd = pairs[i][1];
+            }
+        }
+
+        System.out.println("maximum length of chain = " + chainLen);
+
+    }
+}
 
 
 
