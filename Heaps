@@ -1,0 +1,30 @@
+Priority Queue
+
+import java.util.Comparator;
+import java.util.PriorityQueue; //importing pq
+
+public class Basics {
+    public static void main(String[] args) {
+        // creating pq
+        // PriorityQueue<Integer> pq = new PriorityQueue<>();
+
+        // to change bydefault ascending to descending
+        PriorityQueue<Integer> pq = new PriorityQueue<>(Comparator.reverseOrder());
+
+        // ADD- O(logn) -n is the number of already present in pq
+        pq.add(3);
+        pq.add(4);
+        pq.add(1);
+        pq.add(7);
+
+        // peek and remove
+        while (!pq.isEmpty()) {
+            System.out.println(pq.peek());// O(1)
+            pq.remove(); // O(logn)
+            // highest priority element by default remove and peek
+        }
+    }
+}
+
+PQ for Objects
+
