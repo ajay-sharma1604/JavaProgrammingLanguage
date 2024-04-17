@@ -69,4 +69,38 @@ public class Basics {
 }
 
 
-Heap
+Insert in heap
+
+import java.util.*;
+
+public class Basics {
+
+    static class Heap {
+        ArrayList<Integer> arr = new ArrayList<>();
+
+        public void add(int data) { // O(logn)
+            // add at last idx
+            arr.add(data);
+
+            // child idx
+            int x = arr.size() - 1;
+            // parent idx
+            int par = (x - 1) / 2;
+
+            // CHILD VAL<PARENT VAL
+
+            while (arr.get(x) < arr.get(par)) { // O(logn)
+                // swap
+                int temp = arr.get(x);
+                arr.set(x, arr.get(par)); // child idx -par value store
+                arr.set(par, temp); // par idx =child value store
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        
+    }
+}
+
+
