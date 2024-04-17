@@ -104,3 +104,8 @@ public class Basics {
 }
 
 
+Peek in Heap
+ public int peek() {
+            return arr.get(0);
+        }
+
