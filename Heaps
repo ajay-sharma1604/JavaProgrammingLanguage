@@ -453,8 +453,6 @@ Output:-
 5 4 3 2 1
 =-------------------------------------------------------------------------------------------------------------------
                                                   Nearby Cars
-
-import java.util.Comparator;
 import java.util.*;
 
 public class Basics {
