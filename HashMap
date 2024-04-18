@@ -1,4 +1,4 @@
-  HashMap Operations---------------------------------------------------------------------------------------------------------------------------------------------------
+ ------------------------------------------------------ HashMap Operations------------------------------------------
 
 import java.util.HashMap;
 
@@ -46,3 +46,33 @@ public class Basics {
     }
 
 }
+------------------------------------------------------------------------------------------------------------------
+                                        Iteration on HashMap
+
+import java.util.*;
+
+public class Basics {
+    public static void main(String[] args) {
+        HashMap<String, Integer> hm = new HashMap<>();
+        hm.put("China", 100);
+        hm.put("India", 150);
+        hm.put("US", 50);
+        hm.put("Indonesia", 6);
+        hm.put("Nepal", 5);
+
+        // Iterate through keyset
+        Set<String> keys = hm.keySet();
+        System.out.println(keys);
+
+        for (String k : keys) {
+            System.out.println("key=" + k + ",value=" + hm.get(k));
+        }
+    }
+}
+
+
+------------------------------------------------------------------------------------------------------------------
+
+
+
+
