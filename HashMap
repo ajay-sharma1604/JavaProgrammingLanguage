@@ -244,3 +244,44 @@ public class HashMapCode {
     }
 }
 
+------------------------------------------------------------------------------------------------------------------
+
+                                                LinkedHashMap
+
+import java.util.LinkedHashMap;
+
+public class Basics {
+    public static void main(String[] args) {
+        LinkedHashMap<String, Integer> lhm = new LinkedHashMap<>();
+        lhm.put("India", 100);
+        lhm.put("China", 150);
+        lhm.put("US", 50);
+
+        System.out.println(lhm);
+
+    }
+}
+
+------------------------------------------------------------------------------------------------------------------
+                                                        TreeMap
+import java.util.TreeMap;
+
+public class Basics {
+    public static void main(String[] args) {
+        TreeMap<String, Integer> tm = new TreeMap<>();
+        tm.put("India", 100);
+        tm.put("China", 150);
+        tm.put("US", 50);
+        tm.put("Indonesia", 200);
+
+        System.out.println(tm);// alphabetical order
+
+    }
+}
+
+------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
