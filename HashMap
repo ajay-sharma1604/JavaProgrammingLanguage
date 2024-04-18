@@ -333,8 +333,57 @@ public class Basics {
 }
 
 Output:- 1
-------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                  Valid Anagram
 
 
+import java.util.*;
+
+public class Basics {
+
+    public static boolean isAnagram(String s, String t) {
+
+        if(s.length() != t.length()){
+            return false;
+        }
+        HashMap<Character, Integer> map = new HashMap<>();
+
+        // loop on s
+
+        for (int i = 0; i < s.length(); i++) {
+            char ch = s.charAt(i);
+            // if ch exist = old freq+1, if ch doesnt exist freq =0+1
+            map.put(ch, map.getOrDefault(ch, 0) + 1);
+        }
+
+        // loop on t
+
+        for (int i = 0; i < t.length(); i++) {
+            char ch = t.charAt(i);
+            if (map.get(ch) != null) { // ch exists in map
+                if (map.get(ch) == 1) {
+                    map.remove(ch);
+                } else {
+                    map.put(ch, map.get(ch) - 1);
+                }
+            } else {
+                return false;
+            }
+        }
+
+        // check
+        return map.isEmpty();
+    }
+
+    public static void main(String[] args) {
+        String s = "tulip";
+        String t = "lipid";
+        System.out.println(isAnagram(s, t));
+    }
+}
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+HashSet
 
