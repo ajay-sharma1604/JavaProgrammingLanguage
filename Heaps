@@ -1,4 +1,4 @@
-                                                                                        Priority Queue
+                                                             Priority Queue
 
 import java.util.Comparator;
 import java.util.PriorityQueue; //importing pq
@@ -27,7 +27,7 @@ public class Basics {
 }
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-                                                                                PQ for Objects
+                                                          PQ for Objects
 
 import java.util.Comparator;
 import java.util.PriorityQueue; //importing pq
@@ -70,7 +70,7 @@ public class Basics {
 }
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                    Insert in heap
+                                                       Insert in heap
 
 import java.util.*;
 
@@ -108,14 +108,15 @@ public class Basics {
 }
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-                                                                                        Peek in Heap
+                                                        Peek in Heap
+
  public int peek() {
             return arr.get(0);
         }
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                    Remove from heap
+                                                      Remove from heap
 
 
 import java.util.*;
@@ -305,7 +306,8 @@ Output:-
 1
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                            HeapSort(Ascending order -maxHeap)
+                                          
+                                                        HeapSort(Ascending order -maxHeap)
 
 import java.util.*;
 
@@ -526,7 +528,61 @@ public class Basics {
 }
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                        Weakest Soldier
 
+
+import java.util.*;
+
+public class Basics {
+
+    static class Row implements Comparable<Row> {
+        int soldiers;
+        int idx;
+
+        public Row(int soldiers, int idx) {
+            this.soldiers = soldiers;
+            this.idx = idx;
+        }
+
+        @Override
+        public int compareTo(Row r2) {
+            if (this.soldiers == r2.soldiers) { // when soldiers count equal compare on basis of idx
+                return this.idx - r2.idx;
+            } else {
+                return this.soldiers - r2.soldiers; // when soldiers count are not equal compare on basis of soldier
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        int army[][] = { { 1, 0, 0, 0 }, { 1, 1, 1, 1 }, { 1, 0, 0, 0 }, { 1, 0, 0, 0 } };
+        int k = 2;
+
+        PriorityQueue<Row> pq = new PriorityQueue<>();
+        for (int i = 0; i < army.length; i++) {
+            int count = 0;
+            // counting soldiers
+            for (int j = 0; j < army[0].length; j++) {
+                count += army[i][j] == 1 ? 1 : 0; // soldier khada hai toh add1 other add 0
+            }
+            pq.add(new Row(count, i)); // all rows will be added in pq
+        }
+
+        // print k weakest
+        for (int i = 0; i < k; i++) {
+            System.out.println("R" + pq.remove().idx);
+        }
+
+    }
+}
+
+Output:-
+R0
+R2
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                Sliding Window Maximum
 
 
 
