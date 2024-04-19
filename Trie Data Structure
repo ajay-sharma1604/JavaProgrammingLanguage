@@ -1,4 +1,4 @@
-Basics of Trie
+                                                    Basics of Trie
 
 public class Basics {
 
@@ -17,3 +17,48 @@ public class Basics {
         String words[] = { "the", "a", "there", "their", "any", "thee" };
     }
 }
+ -----------------------------------------------------------------------------------------------------------------
+
+                                        Insert in Trie - O(L)
+
+public class Basics {
+
+    static class Node {
+        Node children[] = new Node[26];
+        boolean eow = false;
+
+        Node() {
+            for (int i = 0; i < 26; i++) {
+                children[i] = null;
+            }
+        }
+    }
+
+    public static Node root = new Node(); // empty by default
+
+    public static void insert(String word) {    //O(L)
+        Node curr = root;
+        // level wise traverse =word length
+        for (int level = 0; level < word.length(); level++) {
+            int idx = word.charAt(level) - 'a'; // indx need to search in children array
+            if (curr.children[idx] == null) {// new node create
+                curr.children[idx] = new Node();
+            }
+            curr = curr.children[idx]; // next level-child node becomes curr and ab iske children wale level par search
+        }
+
+        curr.eow = true; // when curr becomes last node
+    }
+
+    public static void main(String[] args) {
+        String words[] = { "the", "a", "there", "their", "any", "thee" };
+        for (int i = 0; i < words.length; i++) {
+            insert(words[i]);
+        }
+    }
+}
+
+-----------------------------------------------------------------------------------------------------------------
+
+                                    Search in Trie -O(L)
+
