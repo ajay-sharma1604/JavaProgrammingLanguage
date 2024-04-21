@@ -180,19 +180,19 @@ public class Basics {
         for (int i = 0; i < graph[curr].size(); i++) {
             Edge e = graph[curr].get(i);
 
-            // case 1 {neighbour not visited} & after visiting if it says cycle true
+            // case 3{neighbour not visited} & after visiting if it says cycle true
             if (!vis[e.dest]) {
                 if (detectCycleUtil(graph, vis, e.dest, curr)) {
                     return true;
                 }
             }
 
-            // case 2 {visited neighbour, and also not parent}
+            // case 1 {visited neighbour, and also not parent}
             else if (vis[e.dest] && e.dest != par) {
                 return true;
             }
 
-            // case 3 do nothing, continue {automatically}
+            // case 2 do nothing, continue {automatically}
         }
 
         return false; // cycle does not exist
