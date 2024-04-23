@@ -180,7 +180,9 @@ public class Basics {
             return x;
         }
 
-        return find(par[x]);
+        return par[x] -find(par[x]) ;
+       // return find(par[x]);
+
     }
 
     // union function
