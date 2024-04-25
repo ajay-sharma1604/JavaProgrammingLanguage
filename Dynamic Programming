@@ -482,6 +482,8 @@ Output:- 4
 
                ****************************** Longest Common Subsequence (Memoization) ************************************
 
+O(n*m)
+
 public class Basics {
 
     public static int lcs(String str1, String str2, int n, int m, int dp[][]) {
