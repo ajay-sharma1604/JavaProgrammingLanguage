@@ -959,6 +959,35 @@ public class Basics {
         Arrays.fill(dp, -1);
         System.out.println(catalanMem(n, dp));
     }
-}
+}  
+                                                      #Tabulation O(n*n)
 
+import java.util.*;
+import java.util.Arrays;
+
+public class Basics {
+
+    public static int catalanTab(int n) {
+        int dp[] = new int[n + 1];
+
+
+        // Initialization
+        dp[0] = 1;
+        dp[1] = 1;
+        int ans = 0;
+        for (int i = 2; i < n + 1; i++) {
+            for (int j = 0; j < i; j++) {
+                dp[i] += dp[j] * dp[i - j - 1]; //Ci =Cj*Ci-j-1
+            }
+            ans = dp[i];
+        }
+
+        return ans;
+    }
+
+    public static void main(String[] args) {
+        int n = 4;
+        System.out.println(catalanTab(n));
+    }
+}
 
